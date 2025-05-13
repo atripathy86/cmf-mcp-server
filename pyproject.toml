@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmf-mcp-server"
+version = "0.0.1"
+description = "A Model Context Protocol server for CMF API Server"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "cmfAPI>=0.0.1",
+    "python-dotenv",
+    "uvicorn>=0.34.1",
+    "tomli>=2.0.0",
+]
+
+[tool.setuptools.packages]
+find = { include = ["prompts", "resources"] }

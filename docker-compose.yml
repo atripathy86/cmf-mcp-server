@@ -1,0 +1,13 @@
+---
+services:
+  cmf-mcp:
+    #image: atripathy86/cmf-mcp-server:latest
+    container_name: cmf-mcp
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8382:8000"
+    env_file:
+      - .env
+    restart: unless-stopped 
