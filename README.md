@@ -1,4 +1,4 @@
-# cmf-mcp-serer
+# cmf-mcp-server
 
 A Model Context Protocol (MCP) server for CMF Server. This server exposes CMF Server functionality as tools that can be used by AI assistants.
 
