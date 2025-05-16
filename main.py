@@ -42,7 +42,7 @@ def get_version() -> str:
 mcp = FastMCP(
     "cmf-mcp-server", 
     version=get_version(),
-    instructions="You are a helpful assistant that can help with CMF server tasks. You can show pipelines, artifacts, executions, and more.",
+    instructions="You are a helpful assistant that can help with Common Metadata Framework (CMF) server tasks. You can show pipelines, artifacts, executions, and more.",
 )
 
 # Initialize cmf clients based on environment variables
