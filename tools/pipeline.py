@@ -9,9 +9,9 @@ import threading
 import json
 
 def register_tools(mcp, cmf_clients):
-    """Register pipeline related tools with the MCP server."""
+    """Register pipeline related tools for Common Metadata Framework (CMF) with the MCP server."""
 
-    @mcp.tool(name="cmf_show_pipelines", description="Lists all Pipelines in CMF server")
+    @mcp.tool(name="cmf_show_pipelines", description="Lists all Pipelines in Common Metadata Framework (CMF) server")
     def cmf_show_pipelines(cmfClient_instances: Optional[List[str]] = None) -> List[Dict[str, Any]]:
         """
         Show Pipelines in CMF Server(s)

@@ -9,7 +9,7 @@ import threading
 import json
 
 def register_tools(mcp, cmf_clients):
-    """Register execution related tools with the MCP server."""
+    """Register execution related tools for Common Metadata Framework (CMF) with the MCP server."""
 
     @mcp.tool(name="cmf_show_executions", description="Provides Executions details for a given pipeline in CMF server")
     def cmf_show_executions(pipeline: str, cmfClient_instances: Optional[List[str]] = None) -> List[Dict[str, Any]]:
