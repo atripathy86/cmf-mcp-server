@@ -106,7 +106,7 @@ signal.signal(signal.SIGTERM, signal_handler)
 pipeline.register_tools(mcp, cmf_clients)
 execution.register_tools(mcp, cmf_clients)
 artifact.register_tools(mcp, cmf_clients)
-# additional.register_tools(mcp, cmf_clients)
+additional.register_tools(mcp, cmf_clients)
 #Prompts
 # guide.register_prompt(mcp)
 

@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "mcp[cli]>=1.6.0",
-    "cmfAPI>=0.0.1",
+    "cmfAPI>=0.0.2",
     "python-dotenv",
     "uvicorn>=0.34.1",
     "tomli>=2.0.0",
